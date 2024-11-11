@@ -1,0 +1,769 @@
+:root {
+  --main-bg-color: #460d0d;
+  --header-bg-color: #333;
+  --header-text-color: #ebe9e9;
+  --highlight-color: #ffcc00;
+  --secondary-color: #ccc;
+  --link-hover-bg: #770707;
+  --main-content-bg: #e69113;
+  --footer-bg-color: #333;
+  --footer-text-color: white;
+  --card-border-color: lightgray;
+  --card-shadow-color: #d3d3d3d1;
+  --card-bg-color: #6699ff;
+  --font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  background-image: url("https://media.istockphoto.com/id/1473903316/es/v%C3%ADdeo/4k-elegante-fondo-abstracto-de-degradado-amarillo-soleado-claro-animaci%C3%B3n-de-rayas-blancas.jpg?s=640x640&k=20&c=j9j-t7JDHaAKENObFygRYzTub_IH7OL9_mqpIApbOJo=");
+  background-attachment: fixed;
+}
+#logoPrincipal {
+  width: 350px;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  background-image: url("https://media.istockphoto.com/id/1473903316/es/v%C3%ADdeo/4k-elegante-fondo-abstracto-de-degradado-amarillo-soleado-claro-animaci%C3%B3n-de-rayas-blancas.jpg?s=640x640&k=20&c=j9j-t7JDHaAKENObFygRYzTub_IH7OL9_mqpIApbOJo=");
+  background-attachment: fixed;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  width: 100%;
+  border-bottom: 1px solid #ffcc00;
+  position: fixed;
+  z-index: 10;
+  padding: 20px;
+  padding-top: 55px;
+  padding-bottom: 13px;
+}
+
+.logo {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.site-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--highlight-color);
+  margin: 0;
+}
+
+.site-slogan {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin: 10px 0 0 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+  transition: 1s;
+}
+
+nav ul li a {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: var(--header-text-color);
+  padding: 10px;
+  transition: 1s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+}
+
+#mainPrincipal {
+  background-color: var(--main-content-bg);
+  width: 80vw;
+  margin: auto;
+  height: 50vw;
+  padding-top: 150px;
+  border: 5px solid #ffcc00;
+  background-image: url("/assets/fondoPrincipal.jpg");
+  position: relative;
+}
+
+.mainTitleContainer {
+  text-align: center;
+}
+
+.tituloprincipales {
+  font-family: var(--font-family);
+  font-weight: 700;
+  color: var(--header-bg-color);
+}
+
+.parrafoPrincipal {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: #666;
+}
+
+#mainFooter {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 3px solid #ffcc00;
+}
+
+.tarjeta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 220px;
+  min-width: 180px;
+  background: #ffcc00;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: 1s;
+  max-height: 330px;
+}
+
+.cuerpo {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.cuerpo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.pie {
+  background: #137c33;
+  padding: 10px 0;
+  text-align: center;
+  flex-shrink: 0;
+  transition: 1s, transform 0.3s, box-shadow 0.3s;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pie a {
+  text-decoration: none;
+  color: var(--footer-text-color);
+  border-radius: 5px;
+  padding: 6px 10px;
+  transition: 0.5s, box-shadow 0.3s;
+  background-color: #0b6b28;
+}
+
+.pie a:hover {
+  background-color: #05af38;
+  border-radius: 5px;
+}
+
+#botonesArriba {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 35px;
+  padding-top: 40px;
+}
+
+.cuerpo:hover {
+  transform: scale(1.01);
+  background-color: #ffcc00;
+}
+
+.listaTarjeta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.div-imagen {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #ffcc00;
+  text-align: center;
+}
+.logo2 {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 250px;
+}
+#enlaceContacto {
+  background-color: #ffcc00;
+}
+.btn-outline-warning {
+  color: white;
+}
+
+#formularioConsulta {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  margin: auto;
+  max-width: 800px;
+  padding: 20px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  background-color: #ffcc00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.my-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.my-button:active {
+  background-color: #004494;
+  transform: translateY(1px);
+}
+
+#consulta-form {
+  height: 150px;
+}
+
+#sectionPrincipalContacto {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffcc00;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#articuloPrincipalContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+#articuloPrincipalContactoAcercaDeNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.mainTitleContainerContacto {
+  margin-bottom: 20px;
+}
+.mainTitleContainerContactoAcercaDeNosotros {
+  margin-bottom: 20px;
+}
+
+.tituloprincipales {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.tituloprincipalesAcercaDeNosotros {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.parrafoPrincipal {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  max-width: 600px;
+}
+.parrafoPrincipalEnlace {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  max-width: 600px;
+}
+#sectionSecundaria {
+  padding-top: 20px;
+}
+
+#bodyContacto {
+  height: 85%;
+}
+#enlaceCrearPeli {
+  background-color: #ffcc00;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+  --main-bg-color: #460d0d;
+  --header-bg-color: #333;
+  --header-text-color: #ebe9e9;
+  --highlight-color: #ffcc00;
+  --secondary-color: #ccc;
+  --link-hover-bg: #770707;
+  --main-content-bg: #e69113;
+  --footer-bg-color: #333;
+  --footer-text-color: white;
+  --card-border-color: lightgray;
+  --card-shadow-color: #d3d3d3d1;
+  --card-bg-color: #6699ff;
+  --font-family: "Montserrat", sans-serif;
+}
+
+#logoPrincipal {
+  width: 350px;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 5px;
+  display: flex;
+  gap: 15px;
+}
+
+.site-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--highlight-color);
+  margin: 0;
+}
+
+.site-slogan {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin: 10px 0 0 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+  transition: 1s;
+}
+
+nav ul li a {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: var(--header-text-color);
+  padding: 10px;
+  transition: 1s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+}
+
+.mainTitleContainer {
+  text-align: center;
+}
+
+.tituloprincipales {
+  font-family: var(--font-family);
+  font-weight: 700;
+  color: var(--header-bg-color);
+  font-size: 15px;
+}
+
+#mainFooter {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ffcc00;
+}
+
+.tarjeta {
+  position: relative;
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 1s, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.cuerpo img {
+  width: fit-content;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 5%;
+  padding-bottom: 5px;
+}
+
+.pie {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
+  background-color: #0b6b28;
+  text-align: center;
+}
+.pieTarjeta a {
+  display: block;
+  margin: 5px 0;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+.pie a {
+  display: block;
+  padding: 7px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.5s;
+  border-radius: 5px;
+  background-color: #0b6b28;
+  font-size: 12px;
+}
+
+.pie a:hover {
+  background-color: #05af38;
+}
+
+#botonesArriba {
+  display: flex;
+  justify-content: center;
+  padding-right: 35px;
+  padding-top: 40px;
+}
+
+.listaTarjeta {
+  list-style-type: none;
+  padding: 5px;
+  align-content: center;
+  margin: auto;
+}
+.div-imagen {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+  background-color: #e69113;
+  text-align: center;
+}
+.logo2 {
+  width: 100px;
+  height: 300px;
+  z-index: 1;
+}
+#enlaceContacto {
+  background-color: #ffcc00;
+}
+
+.sectionPrincipalIndex {
+  width: 70vw;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffcc00;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 33px;
+}
+
+.articuloPrincipalIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mainTitleConteinerIndex {
+  margin-bottom: 20px;
+}
+
+.tituloPrincipalIndex {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.parrafoPrincipalIndex {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.tituloprincipales {
+  font-size: 45px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.parrafoPrincipal {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.sectionSecundariaIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+  margin: auto;
+}
+
+#subTituloSecundariosIndex {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.titleContainerIndex {
+  width: 70vw;
+  height: 60%;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 20px;
+  background-color: #ffcc00;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#cardConteinerIndex {
+  padding: 30px;
+  background-color: #ffcc00;
+  margin-bottom: 5cap;
+  width: 70vw;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+#subTituloSecundariosBrowser {
+  width: 80%;
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+#subTituloSecundariosBrowser:focus {
+  border-color: #e69113;
+  outline: none;
+}
+#subTituloSecundariosIndex {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#buscarButtonBrowser:hover {
+  background-color: #05af38;
+}
+.buscaPorGenero {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.buscaPorGenero button {
+  padding: 10px 15px;
+  font-size: 10px;
+  color: #fff;
+  background-color: #0b6b28;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buscaPorGenero button:hover {
+  background-color: #05af38;
+}
+
+#genreSelect {
+  width: 20%;
+  padding: 5px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.browseFiltros {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.textoTarjetas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s, transform 0.7s ease;
+  box-shadow: black;
+}
+
+h2 {
+  padding: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+h4 {
+  padding: 5px;
+  font-size: 18;
+  font-weight: bold;
+  text-align: center;
+}
+#contenedorCreadordePelis {
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.form-container {
+  width: 40vw;
+  margin: auto;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #e69113;
+  border-radius: 4px;
+}
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0b6b28;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: 0.5s;
+}
+.form-container button:hover {
+  background-color: #05af38;
+}
+
+.formCrear {
+  margin-top: 4px;
+}

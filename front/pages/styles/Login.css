@@ -1,0 +1,393 @@
+:root {
+  --main-bg-color: #460d0d;
+  --header-bg-color: #333;
+  --header-text-color: #ebe9e9;
+  --highlight-color: #ffcc00;
+  --secondary-color: #ccc;
+  --link-hover-bg: #770707;
+  --main-content-bg: #e69113;
+  --footer-bg-color: #333;
+  --footer-text-color: white;
+  --card-border-color: lightgray;
+  --card-shadow-color: #d3d3d3d1;
+  --card-bg-color: #6699ff;
+  --font-family: "Montserrat", sans-serif;
+}
+#logoPrincipal {
+  width: 350px;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+.btn-outline-warning {
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  background-image: url("https://media.istockphoto.com/id/1473903316/es/v%C3%ADdeo/4k-elegante-fondo-abstracto-de-degradado-amarillo-soleado-claro-animaci%C3%B3n-de-rayas-blancas.jpg?s=640x640&k=20&c=j9j-t7JDHaAKENObFygRYzTub_IH7OL9_mqpIApbOJo=");
+  background-attachment: fixed;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  width: 100%;
+  border-bottom: 1px solid #ffcc00;
+  position: fixed;
+  z-index: 10;
+  padding: 20px;
+  padding-top: 55px;
+  padding-bottom: 13px;
+}
+.logo {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.site-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--highlight-color);
+  margin: 0;
+}
+
+.site-slogan {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin: 10px 0 0 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+  transition: 1s;
+}
+
+nav ul li a {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: var(--header-text-color);
+  padding: 10px;
+  transition: 1s, transform 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+}
+
+#mainPrincipal {
+  background-color: var(--main-content-bg);
+  width: 80vw;
+  margin: auto;
+  height: 50vw;
+  padding-top: 150px;
+  border: 5px solid #ffcc00;
+  background-image: url("/assets/fondoPrincipal.jpg");
+}
+
+.mainTitleContainer {
+  text-align: center;
+}
+
+.tituloprincipales {
+  font-family: var(--font-family);
+  font-weight: 700;
+  color: var(--header-bg-color);
+}
+
+.parrafoPrincipal {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: #666;
+}
+
+#mainFooter {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ffcc00;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid var(--card-border-color);
+  box-shadow: 2px 2px 8px 4px var(--card-shadow-color);
+  border-radius: 5%;
+  font-family: sans-serif;
+  width: 200px;
+  height: 380px;
+  overflow: hidden;
+  transition: 1s, transform 0.3s, box-shadow 0.3s;
+  list-style-type: none;
+}
+
+.cuerpo {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.cuerpo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.pie {
+  background: #137c33;
+  padding: 10px 0;
+  text-align: center;
+  flex-shrink: 0;
+  transition: 1s, transform 0.3s, box-shadow 0.3s;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pie a {
+  text-decoration: none;
+  color: var(--footer-text-color);
+  border-radius: 5px;
+  padding: 6px 10px;
+  transition: 0.5s, box-shadow 0.3s;
+  background-color: #0b6b28;
+}
+
+.pie a:hover {
+  background-color: #05af38;
+  border-radius: 5px;
+}
+
+#botonesArriba {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 35px;
+  padding-top: 40px;
+}
+
+.cuerpo:hover {
+  transform: scale(1.01);
+  background-color: #ffcc00;
+}
+
+.listaTarjeta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.div-imagen {
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #ffcc00;
+  text-align: center;
+}
+.logo2 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#enlaceContacto {
+  background-color: #ffcc00;
+}
+
+#formularioConsulta {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  margin: auto;
+  max-width: 800px;
+  padding: 20px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  background-color: #ffcc00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.my-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.my-button:active {
+  background-color: #004494;
+  transform: translateY(1px);
+}
+
+#consulta-form {
+  height: 150px;
+}
+
+#sectionPrincipalContacto {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffcc00;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#articuloPrincipalContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+#articuloPrincipalContactoAcercaDeNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.mainTitleContainerContacto {
+  margin-bottom: 20px;
+}
+.mainTitleContainerContactoAcercaDeNosotros {
+  margin-bottom: 20px;
+}
+
+.tituloprincipales {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.tituloprincipalesAcercaDeNosotros {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.parrafoPrincipal {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  max-width: 600px;
+}
+.parrafoPrincipalAcercaDeNosotros {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  max-width: 600px;
+}
+#sectionSecundaria {
+  padding-top: 20px;
+}
+
+#bodyContacto {
+  height: 85%;
+}
+
+#enlaceAcercaNosotros {
+  background-color: #ffcc00;
+}
+
+.register-container {
+  padding: 20px;
+  border-radius: 8px;
+}
+.register-container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.register-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.register-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.register-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background: #0b6b28;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.register-container button:hover {
+  background: #05af38;
+}

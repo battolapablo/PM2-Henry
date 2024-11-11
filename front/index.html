@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>BattoClips - Tus películas favoritas en un solo lugar</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="header-content">
+        <a id="enlaceIndex" href="../index.html">
+          <img
+            id="logoPrincipal"
+            src="./assets/LOGO ORIGINAL3.png"
+            alt="Logo" />
+        </a>
+        <nav>
+          <ul id="botonesArriba" class="nav">
+            <li class="nav-item d-none d-lg-block">
+              <a class="btn btn-outline-warning" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="btn btn-outline-warning" href="/pages/CrearPeli.html"
+                >Crea tu Pelicula</a
+              >
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a
+                class="btn btn-outline-warning"
+                href="https://es.wikipedia.org/wiki/Historia_del_cine"
+                >Historia del Cine</a
+              >
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a
+                class="btn btn-outline-warning"
+                href="/pages/Acercadenosotros.html"
+                >Acerca de nosotros</a
+              >
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a
+                class="btn btn-outline-warning"
+                href="./pages/enlacesDeInteres.html"
+                >Enlaces de Interes</a
+              >
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="btn btn-outline-warning" href="./pages/Contacto.html"
+                >Contáctanos</a
+              >
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="btn btn-outline-warning" href="./pages/Login.html"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item dropdown d-lg-none">
+              <a
+                class="nav-link dropdown-toggle btn btn-outline-warning"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Menú
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                <li>
+                  <a class="dropdown-item" href="/pages/CrearPeli.html"
+                    >Crea tu Pelicula</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://es.wikipedia.org/wiki/Historia_del_cine"
+                    >Historia del Cine</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/Acercadenosotros.html"
+                    >Acerca de nosotros</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="enlacesDeInteres.html"
+                    >Enlaces de Interes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Contacto.html">Contáctanos</a>
+                </li>
+                <li><a class="dropdown-item" href="Login.html">Login</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-flex barrasearch" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar en la pagina..."
+                aria-label="Search" />
+            </li>
+            <li class="nav-item">
+              <button
+                id="botonSearch"
+                type="submit"
+                class="btn btn-outline-warning">
+                Search
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="mainPrincipal" class="text-warning-emphasis mainPrincipalIndex">
+      <section id="sectionPrincipal" class="sectionPrincipalIndex">
+        <article id="articuloPrincipal" class="articuloPrincipalIndex">
+          <div class="mainTitleContainer mainTitleConteinerIndex">
+            <h2 class="tituloprincipales tituloPrincipalIndex">
+              ¡Bienvenidos a BattoClips!
+            </h2>
+            <p class="parrafoPrincipal parrafoPrincipalIndex">
+              En esta página podrás encontrar películas que te gusten, las
+              mejores recomendaciones según tus preferencias y historial de
+              visitas.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="sectionSecundaria" class="sectionSecundariaIndex">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="w-100 h-100"
+                style="
+                  background-image: url(https://youthjournalism.org/wp-content/uploads/2024/03/Movie-image-Oppenheimer-FB-page.png);
+                "></div>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="w-100 h-100"
+                style="
+                  background-image: url(https://wallpapers.com/images/hd/joker-poster-37j6jfl9mk1jmozx.jpg);
+                "></div>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="w-100 h-100"
+                style="
+                  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/715b5211-681f-47a4-9d2a-31702395ee30/dg2bddm-2c1553f8-211b-4194-ba46-4434fe7027c1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzcxNWI1MjExLTY4MWYtNDdhNC05ZDJhLTMxNzAyMzk1ZWUzMFwvZGcyYmRkbS0yYzE1NTNmOC0yMTFiLTQxOTQtYmE0Ni00NDM0ZmU3MDI3YzEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.N9cpuOulTiWBWi9iDofm0KOV3w1095tz1hLX439O7O0);
+                "></div>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="w-100 h-100"
+                style="
+                  background-image: url(https://cdna.artstation.com/p/assets/images/images/077/747/370/large/ilowujot-qllgp8dvbb5jv2eo4acwmtoabec.jpg?1720234347);
+                "></div>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="w-100 h-100"
+                style="
+                  background-image: url(https://www.badboys.movie/images/share.jpg);
+                "></div>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="seccionTarjetas" class="sectionPrincipalIndex">
+        <article class="articuloSecundarioBrowse">
+          <div id="contenedorFiltros">
+            <div class="filter-container">
+              <h2 id="subTituloSecundariosIndex">
+                Elegí la Peli que más te guste en toda nuestra Galería
+              </h2>
+              <div>
+                <h5 id="botonfiltrar">Filtrar Búsqueda</h5>
+                <form id="filtroPrincipal">
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Titulo de pelicula"
+                        aria-label="titulodepelicula" />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="number"
+                        min="1988"
+                        max="2024"
+                        class="form-control"
+                        placeholder="Año"
+                        aria-label="year" />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Director"
+                        aria-label="director" />
+                    </div>
+                    <div class="col">
+                      <select class="form-control" id="genero" name="genero">
+                        <option value="Género">Género</option>
+                        <option value="Action">Acción</option>
+                        <option value="Comedy">Comedia</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Horror">Terror</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Suspense">Suspenso</option>
+                        <option value="Adventure">Aventura</option>
+                        <option value="Animation">Animacion</option>
+                        <option value="Police">Police</option>
+                        <option value="Crime">Crimen</option>
+                        <option value="Fantasy">Fantasía</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Comic">Comic</option>
+                        <option value="Superhero">Superheroe</option>
+                        <option value="Children's category">Infantil</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <input
+                        id="botonFiltro"
+                        class="btn btn-success botonesCrearPeli"
+                        value="Filtrar" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="listaTarjeta">
+                <div id="tarjetasContainer"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer id="mainFooter">
+      <p>Derechos Reservados &copy; 2024 BattoClips</p>
+    </footer>
+
+    <script src="./public/bundle.js"></script>
+  </body>
+</html>
